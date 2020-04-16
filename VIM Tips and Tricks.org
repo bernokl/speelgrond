@@ -4,10 +4,10 @@
 
 This tips is for using the VIM mode of Spacemacs.
 
-Insertion mode, type i or a to insert after the cursor.
-To get back into normal mode, press the Esc key or rapidly press f d.
-Pressing <ESC> will place you in normal state or will cancel an unwanted and partially completed command.
-This commands are executed in command mode / normal state.
+- Insertion mode, type i or a to insert after the cursor.
+- To get back into normal mode, press the Esc key or rapidly press f d.
+- Pressing <ESC> will place you in normal state or will cancel an unwanted and partially completed command.
+- This commands are executed in command mode / normal state.
 
  The format for a command in Command Mode (normal state) is:
 - [number]  command  object    OR    command  [number]  object where:
@@ -16,39 +16,38 @@ This commands are executed in command mode / normal state.
 - object - is what the command should act upon, such as  w  for word.
 
 * Editor
-Switch on menu bar: Spc Spc Type: Menu and select Menu-bar-mode
-Quit   SPACE q q
-Increase/decrease font size   SPACE z x (+ k, k, etc. -j, j etc.)
-
-To see all open buffers Type Spc bb
-Cancel incomplte / wrong command type: Clt G
+- Switch on menu bar: Spc Spc Type: Menu and select Menu-bar-mode
+- Quit   SPACE q q
+- Increase/decrease font size   SPACE z x (+ k, k, etc. -j, j etc.)
+- To see all open buffers Type Spc bb
+- Cancel incomplte / wrong command type: Clt G
 
 Note: Combinations of refering to text object using:
-w for word
-S for sentence
-p for paragraph
-. repeat the last command
+- w for word
+- S for sentence
+- p for paragraph
+- . repeat the last command
 
 * Files
-Open a file   SPACE f f   (then ctrl h to go up a directory, TAB for completion)
-Save a file   SPACE f s
-Create a file   SPACE f f <type in the new file path, press enter, it will ask to create a file>
-Find a file in your project   SPACE p f
-Edit the .spacemacs config file   SPACE f e d
-Switch to a file recently opened   SPACE b b
- :w FILENAME  writes the current buffer to disk with file name FILENAME.
- :#,#w FILENAME  saves the lines # through # in file FILENAME.
- :r FILENAME  retrieves disk file FILENAME and inserts it into the current buffer following the cursor position.
+- Open a file   SPACE f f   (then ctrl h to go up a directory, TAB for completion)
+- Save a file   SPACE f s
+- Create a file   SPACE f f <type in the new file path, press enter, it will ask to create a file>
+- Find a file in your project   SPACE p f
+- Edit the .spacemacs config file   SPACE f e d
+- Switch to a file recently opened   SPACE b b
+- :w FILENAME  writes the current buffer to disk with file name FILENAME.
+- :#,#w FILENAME  saves the lines # through # in file FILENAME.
+-  :r FILENAME  retrieves disk file FILENAME and inserts it into the current buffer following the cursor position.
 
 * Find Text
-Find text in buffer   /  (type search text, press ENTER, followed by n or N (next/previous))
-Find next instance of a word that your cursor is over    *
-Find previous instance of a word that your cursor is over    #
-Turn off previous search highlighting   :nohl  (then press ENTER)
-Find text in project   SPACE /
-Find text under cursor in project (or selected with visual-mode)   SPACE *
-Resume last search   SPACE s l
-Find and replace text in buffer, from current line   :.,$s/<find text>/<replace text>/gc
+- Find text in buffer   /  (type search text, press ENTER, followed by n or N (next/previous))
+- Find next instance of a word that your cursor is over    *
+- Find previous instance of a word that your cursor is over    #
+- Turn off previous search highlighting   :nohl  (then press ENTER)
+- Find text in project   SPACE /
+- Find text under cursor in project (or selected with visual-mode)   SPACE *
+- Resume last search   SPACE s l
+- Find and replace text in buffer, from current line   :.,$s/<find text>/<replace text>/gc
 
 * Navigation by "Finding"
 
@@ -66,18 +65,26 @@ Note: Use f & t (or F&T) is combination with other commands to build a new comma
 Cursor is moved using either the arrow keys or the hjkl keys.
          h (left)        j (down)       k (up)            l (right)
 H, M, L	move (H)igh, (M)iddle, or (L)ow within the view frame.
-Move up a page   ctrl u
-Move down a page   ctrl d
-Move the line with cursor to the middle of the screen type: zz,
+
+- Move up a page   ctrl u
+- Move down a page   ctrl d
+
+Move the line with cursor to the middle of the screen type: zz
  - to the top type zt 
  - or bottom type: zb
 
 Go up to next paragraph (whitepace line)   {
+
 Go down to next paragraph (whitepace line)   }
+
 Beginning of the line type: 0 (zero) or ^
+
 End of the line type: $
+
 Forward by word type: w (beginning of the word)
+
 Forward by word type: e (end of the word)
+
 Backwards by word type: b
   - number + w,e,b repeat the action by the number. ie. 7w move 7 words.
 
