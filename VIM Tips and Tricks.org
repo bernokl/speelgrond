@@ -90,6 +90,7 @@ Backwards by word type: b
 
 Add more lines between lines / Move lines down type: Ctrl j
 
+
 Movement in the Buffer:
   - Type gg  to go to the beginning of a buffer.
   - Type  G  to move to the end of a buffer.
@@ -109,20 +110,20 @@ Move between frames type Ctl x o (Small letter o)
 Move between frames type Spc + frame number 
 To close the active frame type Clt x 0 (zero) or Spc w c
 
-Split frame vertically   SPACE w s
-Split frame horizontally   SPACE w h
-Resize windows Ctrl w + or -  of height and Ctrl w < or > for width  
-Make all windows same size Ctrl w =
-Navigate to the window in the given direction type <C-w>h,j,k,l - (<C-w>j navigates down)
-Move the current window in the given direction Type <C-w>H,J,K,L - (<C-w>J moves it down)
+- Split frame vertically   SPACE w s
+- Split frame horizontally   SPACE w h
+- Resize windows Ctrl w + or -  of height and Ctrl w < or > for width
+- Make all windows same size Ctrl w =
+- Navigate to the window in the given direction type <C-w>h,j,k,l - (<C-w>j navigates down)
+- Move the current window in the given direction Type <C-w>H,J,K,L - (<C-w>J moves it down)
 
 * Buffers
 To move between open Buffers (Files) type Spc + TAB
 
 * Highlight Text with Visual Mode
-Press v. (To enter visual mode so you can highlight text).
-Use the arrow keys (or h,j,k,l,w,b,$) to highlight.
-Type v i w for word selection, v i s for sentence selection
+- Press v. (To enter visual mode so you can highlight text).
+- Use the arrow keys (or h,j,k,l,w,b,$) to highlight.
+- Type v i w for word selection, v i s for sentence selection
 
 * Editing
 - Type Formating (Bold, Underline etc.) Type , x + options in sub menu ie. b = Bold, u = Underline
@@ -200,19 +201,22 @@ Type v i w for word selection, v i s for sentence selection
   -  :!rm  or  :!del FILENAME        -  removes file FILENAME.
 
 * Additional functions: 
-Go to previous function[
-Go to next function   ]]
-Go up to outer brace   [{
-Go down to outer brace   ]}
-Comment out a line    g c c   (requires the evil-commentary layer)
-Comment out highlighted text   g c
-Indenting highlighted text    Type > or < to indent right or left.    (to indent more, type 2> or 3>)
-Join lines separated by whitespace   J
-Show whitespace   SPACE t w
-Convert spaces to tabs   SPACE : (then type tabify and press ENTER)
-Convert tabs to spaces   SPACE : (then type untabify and press ENTER)
+- Go to previous function[
+- Go to next function   ]]
+- Go up to outer brace   [{
+- Go down to outer brace   ]}
+- Comment out a line    g c c   (requires the evil-commentary layer)
+- Comment out highlighted text   g c
+- Indenting highlighted text    Type > or < to indent right or left.    (to indent more, type 2> or 3>)
+- Join lines separated by whitespace   J
+- Show whitespace   SPACE t w
+- Convert spaces to tabs   SPACE : (then type tabify and press ENTER)
+- Convert tabs to spaces   SPACE : (then type untabify and press ENTER)
 
-
+* Go Commands
+- New terminal block <s + TAB
+- Add Go to the block to for Golang: =#+begin_src GO=
+- Run the block with ,, in the block in command mode
 
 
 
