@@ -1,0 +1,24 @@
+Come hang out with Bryan Liles as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Bryan talking about the things he knows. Some of this will be Bryan exploring something new with the audience. Come join the fun
+
+https://www.youtube.com/watch?v=ezM2H-tHMXk
+
+
+Show a few k8s technologies in one video.
+
+* News
+ - https://github.com/vmware-tanzu/tgik/tree/master/episodes/115#community :)
+ - quick shout out to the comunity
+ - HELM 3.2.0 is graduating!!
+ - Paris pitman has her 100th podcast outside                                       
+ - K8s contributors better communications with a new team (https://kubernetes.io/blog/2020/04/21/contributor-communication/)
+ - Contour is getting donated (ingress tool)
+
+
+* Lets deploy an application on k8s
+ - git@github.com:bryanl/websay.git
+ - First create a go app 
+ - Go create a docker file.
+ - Discuss using "Distroless" images https://github.com/GoogleContainerTools/distroless
+ - Talk about cloudNative build packs to help with question of docker file https://buildpacks.io/
+ - Talk about minikube vs kind. Says minikube is his preference
+   
