@@ -17,27 +17,32 @@ This tips is for using the VIM mode of Spacemacs.
 
 * Editor
 - Switch on menu bar: Spc Spc Type: Menu and select Menu-bar-mode
-- Quit   SPACE q q
-- Increase/decrease font size   SPACE z x (+ k, k, etc. -j, j etc.)
-- To see all open buffers Type Spc bb
-- Cancel incomplte / wrong command type: Clt G
+- Quit   =SPACE q q=
+- Increase/decrease font size   =SPACE z x= (+ k, k, etc. -j, j etc.)
+- To see all open buffers Type =Spc bb=
+- Cancel incomplte / wrong command type: =Clt G=
+- Insert a hyperlink =,i l= - Then type the hyperlink + Enter, Type text assisiated with hyperlink + Enter
+
 
 Note: Combinations of refering to text object using:
 - w for word
 - S for sentence
 - p for paragraph
-- . repeat the last command
+
 
 * Files
 - Open a file   SPACE f f   (then ctrl h to go up a directory, TAB for completion)
 - Save a file   SPACE f s
 - Create a file   SPACE f f <type in the new file path, press enter, it will ask to create a file>
-- Find a file in your project   SPACE p f
+- Delete a file SPACE f D
+  Find a file in your project   SPACE p f
 - Edit the .spacemacs config file   SPACE f e d
 - Switch to a file recently opened   SPACE b b
 - :w FILENAME  writes the current buffer to disk with file name FILENAME.
 - :#,#w FILENAME  saves the lines # through # in file FILENAME.
--  :r FILENAME  retrieves disk file FILENAME and inserts it into the current buffer following the cursor position.
+- :r FILENAME  retrieves disk file FILENAME and inserts it into the current buffer following the cursor position.
+
+
 
 * Find Text
 - Find text in buffer   /  (type search text, press ENTER, followed by n or N (next/previous))
@@ -118,7 +123,12 @@ To close the active frame type Clt x 0 (zero) or Spc w c
 - Move the current window in the given direction Type <C-w>H,J,K,L - (<C-w>J moves it down)
 
 * Buffers
-To move between open Buffers (Files) type Spc + TAB
+- To move between open Buffers (Files) type =Spc + TAB=
+- List open buffers =SPACE b b=
+- Open new buffer =SPACE b N n=
+- In the Box, launch a new window with =Clt b, c=
+- Close a buffer =Ctrl x + buffer number= - Close buffer 2: =Ctrl x 2=
+
 
 * Highlight Text with Visual Mode
 - Press v. (To enter visual mode so you can highlight text).
@@ -213,10 +223,26 @@ To move between open Buffers (Files) type Spc + TAB
 - Convert spaces to tabs   SPACE : (then type tabify and press ENTER)
 - Convert tabs to spaces   SPACE : (then type untabify and press ENTER)
 
+
+
+
+
+
+
+
 * Go Commands
 - New terminal block <s + TAB
 - Add Go to the block to for Golang: =#+begin_src GO=
 - Run the block with ,, in the block in command mode
 
+
+* Basic Linux 
+- List directories - =ls=
+- Launch Treemacs - =SPACE p t= , Quit out of Treemacs =q=
+- GIT commands ??
+
+* Tmate session
+- Type tmate discplay -p "#{tmate_ssh}'+ ENTER
+- ssh code will be displayed on screen that can be shared for pairing.
 
 
