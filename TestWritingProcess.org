@@ -1,4 +1,6 @@
 
+Note, still very RAW, just getting information out of my head, any edits, updates welcome
+
 * Packet box:
   
 Setting up a test enviroment in a packet box via Windows:
