@@ -1,0 +1,20 @@
+# Simple steps to happiness
+Simply follow the steps on https://hackmd.io/zloUHcvcTiyzXZqmZrJDJQ?edit
+This will set up a k8s cluste on packet. so what I hear you say?
+
+If you follow the steps and attach with kubectl you will be brought to a emacs session
+
+Lets see what does this give you? Easy access to org files to start with, lets do a quick review for the uninitiated.
+Org allows you to execute your code right in the document. Lets do a quick example
+
+#+begin_src shell
+  HAII="Hello from New Zealand"
+  echo $HAII
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Hello from New Zealand
+#+end_example
+
+Powerful right? If you have ever worked in a terminal the power of being able to execute code right from your documentation will not be lost on you.
