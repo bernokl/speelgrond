@@ -18,3 +18,53 @@ Hello from New Zealand
 #+end_example
 
 Powerful right? If you have ever worked in a terminal the power of being able to execute code right from your documentation will not be lost on you.
+
+Right lets run through some kubectl commands see if we can get a quick view of our infra, to create the code block below we will use `,ibs`
+add shell, our command and then esc and ,, to run, lets try
+
+ #+begin_src shell
+kubectl get pods -A
+ #+end_src
+
+ #+RESULTS:
+ #+begin_example
+ NAMESPACE        NAME                                                      READY   STATUS    RESTARTS   AGE
+ apisnoop         auditlogger-597b56b99b-5j7t5                              1/1     Running   4          19m
+ apisnoop         snoopdb-0                                                 1/1     Running   0          19m
+ bb11-humacs      bb11-humacs-0                                             1/1     Running   0          19m
+ cert-manager     cert-manager-5dcd6c7d7f-w45t2                             1/1     Running   0          20m
+ cert-manager     cert-manager-cainjector-7c88fb85dd-6v6xf                  1/1     Running   0          20m
+ cert-manager     cert-manager-webhook-65f4cc9b55-twbrg                     1/1     Running   0          20m
+ kube-system      coredns-f9fd979d6-cftkw                                   1/1     Running   0          20m
+ kube-system      coredns-f9fd979d6-j7ghm                                   1/1     Running   0          20m
+ kube-system      csi-node-9njgh                                            2/2     Running   0          20m
+ kube-system      csi-packet-controller-0                                   3/3     Running   0          20m
+ kube-system      etcd-bb11-humacs-control-plane-cj64n                      1/1     Running   0          22m
+ kube-system      kube-apiserver-bb11-humacs-control-plane-cj64n            1/1     Running   0          22m
+ kube-system      kube-controller-manager-bb11-humacs-control-plane-cj64n   1/1     Running   1          22m
+ kube-system      kube-proxy-74xpg                                          1/1     Running   0          20m
+ kube-system      kube-scheduler-bb11-humacs-control-plane-cj64n            1/1     Running   0          22m
+ kube-system      packet-cloud-controller-manager-77cd8c9c7c-xrtfj          1/1     Running   0          20m
+ kube-system      weave-net-9xbww                                           2/2     Running   0          20m
+ metallb-system   controller-fb659dc8-jvq4f                                 1/1     Running   0          19m
+ metallb-system   speaker-hnbzq                                             1/1     Running   0          19m
+ nginx-ingress    nginx-ingress-ingress-nginx-controller-6b475799c7-24v7j   1/1     Running   0          20m
+ #+end_example
+
+
+Amazing right? now I can exec into pods, run logs do all my admin right inside this file.
+A second amazing way to interact with your infra is through the kubernete-overview layer that can be accessed vir `spc a t k`
+It will not capture everything in the document, but it is a very clean fast way to look in on your infra, here is some cheats
+
+#+begin_comment
+Type v to choose which resources to display.
+
+Type D to mark an object for deletion, and x to execute.
+Type u to unmark the object at point, or U to unmark all objects.
+
+Type RET to inspect the object on the current line.
+
+Type M-w to copy the thing at point.
+
+Type g to refresh the buffer.
+#+end_comment
